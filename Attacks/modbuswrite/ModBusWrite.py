@@ -13,7 +13,7 @@ Impact:
 """
 
 # PLC IP address and Modbus TCP port
-PLC_IP = "192.168.1.137"
+PLC_IP = ""
 MODBUS_PORT = 502
 
 # Create Modbus client
@@ -33,3 +33,4 @@ if client.open():
     client.close()
 else:
     print("[-] Connection failed: PLC unreachable")
+

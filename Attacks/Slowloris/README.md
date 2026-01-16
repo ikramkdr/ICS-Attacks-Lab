@@ -60,7 +60,7 @@ The attack intensity is controlled by the `NUM_SOCKETS` parameter.
 ---
 
 
-## 6. How to Run the Attack
+## 5. How to Run the Attack
 
 ### Step 1 – Start the HTTP Server
 

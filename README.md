@@ -66,10 +66,3 @@ The goal is to force an actuator to change state by writing unauthorized values 
 - Modbus TCP library for ESP32
 - DHT11 sensor library
 
-### On the Attacker Machine
-- Python 3
-- pyModbusTCP
-
-Install Python dependencies:
-```bash
-pip install pyModbusTCP

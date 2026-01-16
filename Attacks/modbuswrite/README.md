@@ -91,7 +91,7 @@ python hmi_dashboard.py
 From the attack directory, run:
 
 ```bash
-python modbuswrite.py
+python ModBusWrite.py
 ```
 ### This script:
 

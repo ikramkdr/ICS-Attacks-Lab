@@ -1,0 +1,89 @@
+/* static/style.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    color: #333;
+    transition: background-color 0.5s ease;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px 50px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 25px;
+    font-size: 2.2em;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 15px;
+}
+
+.data-display p {
+    font-size: 1.6em;
+    margin: 15px 0;
+    color: #555;
+}
+
+.data-display span {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.status-box {
+    padding: 15px 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: white;
+    transition: background-color 0.5s ease;
+}
+
+/* Status Classes */
+.normal .status-box { background-color: #28a745; } /* Green */
+.warning .status-box { background-color: #ffc107; color: #333; } /* Yellow */
+.critical .status-box { background-color: #dc3545; } /* Red */
+.offline .status-box { background-color: #6c757d; } /* Grey */
+
+
+/* Body background changes based on status */
+body.normal { background-color: #e6ffe6; } /* Light Green */
+body.warning { background-color: #fff9e6; } /* Light Yellow */
+body.critical { background-color: #ffe6e6; } /* Light Red */
+body.offline { background-color: #f0f2f5; } /* Default */
+
+
+.critical-alert {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #dc3545;
+    color: white;
+    font-size: 1.8em;
+    font-weight: bold;
+    border-radius: 8px;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.03); }
+    100% { transform: scale(1); }
+}
+
+/* Specific data value colors */
+#temperature { color: #007bff; }
+.warning #temperature { color: #ffc107; }
+.critical #temperature { color: #dc3545; }
+#valve_status { color: #007bff; }
+.critical #valve_status { color: #dc3545; }

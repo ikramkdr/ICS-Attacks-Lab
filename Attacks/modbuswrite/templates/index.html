@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industrial HMI Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta http-equiv="refresh" content="1"> </head>
+<body class="{{ data.css_class }}">
+    <div class="container">
+        <h1>Industrial Process Monitor</h1>
+        <div class="data-display">
+            <p>Temperature: <span id="temperature">{{ data.temperature }}°C</span></p>
+            <p>Valve Status: <span id="valve_status">{{ data.valve_status }}</span></p>
+        </div>
+        <div class="status-box {{ data.css_class }}">
+            <p id="status_message">{{ data.status_message }}</p>
+        </div>
+
+        {% if data.css_class == 'critical' %}
+            <div class="critical-alert">
+                <p>!!! SYSTEM INTEGRITY COMPROMISED !!!</p>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>

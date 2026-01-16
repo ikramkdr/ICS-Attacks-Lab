@@ -80,9 +80,9 @@ python hmi_dashboard.py
 ```
 ### This dashboard:
 
-Displays temperature values
-Displays actuator state
-Communicates with the PLC via Modbus TCP
+1. Displays temperature values
+2. Displays actuator state
+3. Communicates with the PLC via Modbus TCP
 
 ---
 
@@ -93,8 +93,8 @@ From the attack directory, run:
 ```bash
 python modbuswrite.py
 ```
-###This script:
+### This script:
 
-Connects to the PLC
-Writes a forged value into Holding Register 0
-Triggers the PLC control logic
+1. Connects to the PLC
+2. Writes a forged value into Holding Register 0
+3. Triggers the PLC control logic

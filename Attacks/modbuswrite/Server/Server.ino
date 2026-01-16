@@ -19,8 +19,8 @@
 DHT dht(DHTPIN, DHTTYPE);
 
 // --- WiFi Configuration ---
-const char* ssid = "TP-Link_D028";
-const char* password = "42008996";
+const char* ssid = "";
+const char* password = "";
 
 // --- Modbus Server ---
 ModbusIP mb;

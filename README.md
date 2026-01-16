@@ -25,8 +25,8 @@ All PLCs, HMIs, and services used in this work are simulated or low-cost educati
 ## Implemented Attacks
 - Slowloris Attack (HTTP Denial of Service)
 - Modbus TCP Write Injection
-- Modbus TCP Read (in progress)
-- Replay Attack (in progress)
+- Modbus TCP Read 
+- Replay Attack 
 
 ## Experimental Environment
 - Operating System: Windows 10
